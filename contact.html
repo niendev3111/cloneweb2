@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Kiasu & Spa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (reuse) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar-brand">
+                    <div class="logo"><span class="logo-text">KS</span></div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#home">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">DỊCH VỤ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">GIỚI THIỆU</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">LIÊN HỆ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#blog">BLOG</a></li>
+                    </ul>
+                    <div class="search-icon"><i class="fas fa-search"></i></div>
+                </div>
+            </nav>
+        </div>
+        <div class="header-line"></div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="services-hero">
+        <div class="container text-center">
+            <h1 class="hero-title">Liên hệ & Đặt lịch</h1>
+            <p class="hero-sub">Kết nối nhanh với Kiasu & Spa. Chúng tôi phản hồi trong ít phút.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <h4 class="contact-title">Gửi yêu cầu đặt lịch</h4>
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.'); this.reset();">
+                            <div class="row g-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Họ và tên" required></div>
+                                <div class="col-md-6"><input type="tel" class="form-control" placeholder="Số điện thoại" required></div>
+                                <div class="col-md-6"><input type="datetime-local" class="form-control" required></div>
+                                <div class="col-md-6">
+                                    <select class="form-select" required>
+                                        <option value="" selected>Chọn dịch vụ</option>
+                                        <option>Massage body</option>
+                                        <option>Chăm sóc cơ thể</option>
+                                        <option>Chăm sóc tóc & da đầu</option>
+                                    </select>
+                                </div>
+                                <div class="col-12"><textarea rows="3" class="form-control" placeholder="Lời nhắn (tuỳ chọn)"></textarea></div>
+                            </div>
+                            <button class="btn-send mt-3" type="submit">Gửi yêu cầu</button>
+                        </form>
+                        <div class="contact-infos">
+                            <div><i class="fas fa-phone"></i> 0123 456 789</div>
+                            <div><i class="fas fa-envelope"></i> hello@kiasuspa.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-wrapper">
+                        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.502808790165!2d106.700423!3d10.772247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f43c2d1bd2b%3A0x9b8b1a!2zUG9zdG9mZmljZQ!5e0!3m2!1svi!2s!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (reuse) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i><span>FACEBOOK</span></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i><span>INSTAGRAM</span></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i><span>PINTEREST</span></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i><span>E-MAIL</span></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i><span>WHATSAPP</span></a>
+                    <a href="#" class="social-link"><i class="fab fa-weixin"></i><span>WECHAT</span></a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom"><p class="copyright">©2024 - Bản quyền thuộc về KiasuSpa | Thiết kế bởi AZMedia</p></div>
+            </div>
+        </div>
+        <button class="scroll-to-top"><i class="fas fa-chevron-up"></i></button>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a class="fab-btn fab-call" href="tel:+84123456789" aria-label="Gọi nhanh"><i class="fas fa-phone"></i></a>
+        <a class="fab-btn fab-zalo" href="#" aria-label="Nhắn Zalo"><i class="fab fa-facebook-messenger"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+

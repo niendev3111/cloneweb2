@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiasu & Spa - Chăm sóc sức khỏe</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar-brand">
+                    <div class="logo">
+                        <span class="logo-text">KS</span>
+                    </div>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header-line"></div>
+    </header>
+
+    <!-- Sliding Banner -->
+    <section class="sliding-banner">
+        <div class="slide-container">
+            <div class="slide active">
+                <img src="https://kiasuspa.com.vn/wp-content/uploads/2024/10/voucher0-1.jpg" alt="Gift Voucher" class="slide-image">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" alt="Spa Treatment" class="slide-image">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" alt="Spa Candles" class="slide-image">
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Pagination Dots -->
+            <div class="pagination">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Kiasu & Spa chăm sóc sức khỏe</h2>
+                <h3 class="section-title">DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                <p class="section-description">
+                    Chúng tôi cung cấp các dịch vụ thư giãn, giải tỏa căng thẳng, làm đẹp, chăm sóc da và cơ thể toàn diện.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Body Massage -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Body Massage" class="img-fluid">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">MÁT-XA CƠ THỂ</h4>
+                        <p class="service-description">
+                            Hãy thử dịch vụ Massage bằng tinh dầu thơm để giảm căng thẳng, dịch vụ Massage KiaSu để kết hợp nhiều kỹ thuật xoa dịu hoặc dịch vụ Massage Thái để toàn thân được thư giãn và cân bằng.
+                        </p>
+                        <button class="btn-view-more">XEM THÊM</button>
+                    </div>
+                </div>
+
+                <!-- Service 2: Body Care -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Body Care" class="img-fluid">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">CHĂM SÓC CƠ THỂ</h4>
+                        <p class="service-description">
+                            Thư giãn với Tắm thảo dược để tẩy tế bào chết và chăm sóc da. Tắm thảo dược cho hông giúp thải độc, điều trị các vấn đề phụ khoa và hỗ trợ giấc ngủ ngon. Ngâm chân thảo dược giúp tăng cường tuần hoàn máu, giảm mệt mỏi và trẻ hóa đôi chân.
+                        </p>
+                        <button class="btn-view-more">XEM THÊM</button>
+                    </div>
+                </div>
+
+                <!-- Service 3: Hair & Scalp Care -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1596178060819-d4b27efc4f0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Hair Care" class="img-fluid">
+                        <div class="service-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">CHĂM SÓC TÓC & DA ĐẦU BẰNG THẢO DƯỢC</h4>
+                        <p class="service-description">
+                            Hãy tận hưởng sản phẩm Chăm sóc tóc và da đầu bằng thảo dược của chúng tôi, giúp làm sạch và tăng cường sức mạnh cho da đầu bằng các thành phần thảo dược.
+                        </p>
+                        <button class="btn-view-more">XEM THÊM</button>
+                    </div>
+                </div>
+
+                <!-- Service 4: 4-Hand Body -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="4-Hand Body" class="img-fluid">
+                        <div class="service-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">CƠ THỂ 4 TAY</h4>
+                        <p class="service-description">
+                            Body 4 Hands có hai chuyên viên trị liệu phối hợp nhịp nhàng để giải tỏa căng thẳng và thúc đẩy thư giãn sâu. Tận hưởng tuần hoàn máu tốt hơn và giảm căng thẳng với trải nghiệm massage độc đáo này.
+                        </p>
+                        <button class="btn-view-more">XEM THÊM</button>
+                    </div>
+                </div>
+
+                <!-- Service 5: Foot Massage -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Foot Massage" class="img-fluid">
+                        <div class="service-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">MASSAGE CHÂN</h4>
+                        <p class="service-description">
+                            Massage chân tập trung vào việc kích thích các huyệt đạo ở lòng bàn chân, giúp cải thiện lưu thông máu. Điều này giúp giảm căng thẳng và thúc đẩy sức khỏe tổng thể một cách tối ưu.
+                        </p>
+                        <button class="btn-view-more">XEM THÊM</button>
+                    </div>
+                </div>
+
+                <!-- Service 6: Pregnancy Massage -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1596178060819-d4b27efc4f0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pregnancy Massage" class="img-fluid">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h4 class="service-title">MASSAGE CHO MẸ BẦU</h4>
+                        <p class="service-description">
+                            Massage bà bầu kết hợp tinh dầu, kỹ thuật nhẹ nhàng và đá bazan giúp giảm căng thẳng cho bà bầu. Liệu pháp này giúp cải thiện lưu thông máu, thúc đẩy thư giãn và mang lại giấc ngủ sâu, ngon giấc.
+                        </p>
+                        <button class="btn-view-more">XEM THÊM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section class="opening-hours-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="opening-hours-content">
+                        <h2 class="section-subtitle">Kiasu & Spa chăm sóc sức khỏe</h2>
+                        <h3 class="section-title">Giờ mở cửa</h3>
+                        <p class="opening-description">
+                            Giờ mở cửa của chúng tôi là từ 8:30 sáng đến 11 giờ tối, mang đến cho bạn nhiều thời gian 
+                            để tận hưởng các dịch vụ thư giãn của chúng tôi suốt cả ngày.
+                        </p>
+                        
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <i class="fas fa-circle"></i>
+                                <span class="day">THỨ HAI</span>
+                                <span class="time">8:30 sáng - 11:00 tối</span>
+                            </div>
+                            <div class="hour-item">
+                                <i class="fas fa-circle"></i>
+                                <span class="day">THỨ BA</span>
+                                <span class="time">8:30 sáng - 11:00 tối</span>
+                            </div>
+                            <div class="hour-item">
+                                <i class="fas fa-circle"></i>
+                                <span class="day">THỨ TƯ</span>
+                                <span class="time">8:30 sáng - 11:00 tối</span>
+                            </div>
+                            <div class="hour-item">
+                                <i class="fas fa-circle"></i>
+                                <span class="day">THỨ NĂM</span>
+                                <span class="time">8:30 sáng - 11:00 tối</span>
+                            </div>
+                            <div class="hour-item">
+                                <i class="fas fa-circle"></i>
+                                <span class="day">THỨ SÁU</span>
+                                <span class="time">8:30 sáng - 11:00 tối</span>
+                            </div>
+                            <div class="hour-item">
+                                <i class="fas fa-circle"></i>
+                                <span class="day">THỨ BẢY</span>
+                                <span class="time">8:30 sáng - 11:00 tối</span>
+                            </div>
+                            <div class="hour-item">
+                                <i class="fas fa-circle"></i>
+                                <span class="day">CHỦ NHẬT</span>
+                                <span class="time">8:30 sáng - 11:00 tối</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-book-now">ĐẶT NGAY</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="opening-hours-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Head Massage" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Ưu đãi tốt nhất cho bạn</h2>
+                <h3 class="section-title">Gói liệu trình nổi bật</h3>
+                <p class="section-description">Chọn gói phù hợp để tận hưởng thư giãn trọn vẹn. Giá minh bạch, dịch vụ cao cấp.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-badge">Phổ biến</div>
+                    <h4 class="price-title">Thư giãn cơ bản</h4>
+                    <div class="price-value">399k</div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Massage tinh dầu 60 phút</li>
+                        <li><i class="fas fa-check"></i> Ngâm chân thảo dược</li>
+                        <li><i class="fas fa-check"></i> Trà thảo mộc miễn phí</li>
+                    </ul>
+                    <a href="#contact" class="btn-price">Đặt ngay</a>
+                </div>
+
+                <div class="price-card featured">
+                    <div class="price-badge">Best Choice</div>
+                    <h4 class="price-title">Combo chăm sóc cơ thể</h4>
+                    <div class="price-value">699k</div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Massage 90 phút</li>
+                        <li><i class="fas fa-check"></i> Tẩy da chết body</li>
+                        <li><i class="fas fa-check"></i> Xông thảo dược</li>
+                        <li><i class="fas fa-check"></i> Đắp mặt nạ thiên nhiên</li>
+                    </ul>
+                    <a href="#contact" class="btn-price primary">Đặt ngay</a>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-badge">VIP</div>
+                    <h4 class="price-title">Detox & phục hồi</h4>
+                    <div class="price-value">999k</div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Massage đá nóng 90 phút</li>
+                        <li><i class="fas fa-check"></i> Chăm sóc da đầu thảo dược</li>
+                        <li><i class="fas fa-check"></i> Tắm thảo dược + xông hơi</li>
+                        <li><i class="fas fa-check"></i> Trà detox & snack nhẹ</li>
+                    </ul>
+                    <a href="#contact" class="btn-price">Đặt ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Câu hỏi thường gặp</h2>
+                <h3 class="section-title">Bạn đang thắc mắc?</h3>
+                <p class="section-description">Giải đáp nhanh những câu hỏi phổ biến về thời gian, đặt lịch và chuẩn bị trước khi đến spa.</p>
+            </div>
+            <div class="faq-accordion" id="faqAccordion">
+                <div class="faq-item">
+                    <button class="faq-toggle" data-bs-toggle="collapse" data-bs-target="#f1">Tôi nên đến sớm trước bao lâu?</button>
+                    <div id="f1" class="collapse show" data-bs-parent="#faqAccordion">
+                        <div class="faq-content">Bạn nên đến trước 10-15 phút để làm thủ tục và thư giãn, giúp buổi trị liệu diễn ra trọn vẹn.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-toggle" data-bs-toggle="collapse" data-bs-target="#f2">Có cần đặt lịch trước không?</button>
+                    <div id="f2" class="collapse" data-bs-parent="#faqAccordion">
+                        <div class="faq-content">Nên đặt lịch trước để đảm bảo còn chỗ và chọn được khung giờ phù hợp với bạn.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-toggle" data-bs-toggle="collapse" data-bs-target="#f3">Tôi có thể đổi lịch/huỷ lịch chứ?</button>
+                    <div id="f3" class="collapse" data-bs-parent="#faqAccordion">
+                        <div class="faq-content">Bạn có thể đổi/huỷ trước 12 giờ miễn phí. Sau khoảng thời gian này có thể phát sinh phụ phí.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact + Map Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <h4 class="contact-title">Liên hệ & Đặt lịch</h4>
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.'); this.reset();">
+                            <div class="row g-3">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Họ và tên" required></div>
+                                <div class="col-md-6"><input type="tel" class="form-control" placeholder="Số điện thoại" required></div>
+                                <div class="col-md-6"><input type="datetime-local" class="form-control" required></div>
+                                <div class="col-md-6"><select class="form-select" required>
+                                    <option value="" selected>Chọn dịch vụ</option>
+                                    <option>Massage body</option>
+                                    <option>Chăm sóc cơ thể</option>
+                                    <option>Chăm sóc tóc & da đầu</option>
+                                </select></div>
+                                <div class="col-12"><textarea rows="3" class="form-control" placeholder="Lời nhắn (tuỳ chọn)"></textarea></div>
+                            </div>
+                            <button class="btn-send mt-3" type="submit">Gửi yêu cầu</button>
+                        </form>
+                        <div class="contact-infos">
+                            <div><i class="fas fa-phone"></i> 0123 456 789</div>
+                            <div><i class="fas fa-envelope"></i> hello@kiasuspa.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-wrapper">
+                        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.502808790165!2d106.700423!3d10.772247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f43c2d1bd2b%3A0x9b8b1a!2zUG9zdG9mZmljZQ!5e0!3m2!1svi!2s!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Testimonials Split (bottom) -->
+    <section class="cta-testimonials light">
+        <div class="wave-top" aria-hidden="true"></div>
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="testi-hero-image">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1636041267941-5f3a2f3f121c?auto=format&fit=crop&w=1600&q=60" alt="Massage hero">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cta-header text-center text-lg-start">
+                        <h2 class="section-subtitle">Kiasu & Spa chăm sóc sức khỏe</h2>
+                        <h3 class="section-title">Khách hàng nói gì</h3>
+                    </div>
+                    <div class="testimonial-cards">
+                        <div class="tc-card">
+                            <div class="tc-top">
+                                <img class="tc-avatar" src="https://i.pravatar.cc/100?img=18" alt="">
+                                <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                            <p class="tc-text">Tôi đã trải nghiệm massage ở đây và cảm thấy nhẹ nhõm hơn rất nhiều. Nhân viên rất chuyên nghiệp và thân thiện; tôi chắc chắn sẽ quay lại!</p>
+                            <div class="tc-name">Jane Fross</div>
+                        </div>
+                        <div class="tc-card">
+                            <div class="tc-top">
+                                <img class="tc-avatar" src="https://i.pravatar.cc/100?img=25" alt="">
+                                <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                            <p class="tc-text">Các bài viết trên trang tin tức giúp tôi hiểu rõ hơn về chăm sóc da. Nhờ đó, tình trạng da của tôi đã được cải thiện.</p>
+                            <div class="tc-name">Kelly Johnson</div>
+                        </div>
+                        <div class="tc-card">
+                            <div class="tc-top">
+                                <img class="tc-avatar" src="https://i.pravatar.cc/100?img=5" alt="">
+                                <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                            <p class="tc-text">Không gian spa rất thoải mái và thư giãn. Liệu trình làm đẹp rất hiệu quả; tôi nhận thấy da mình sáng hơn chỉ sau một lần trị liệu!</p>
+                            <div class="tc-name">Katy Perry</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>FACEBOOK</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>INSTAGRAM</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-pinterest-p"></i>
+                        <span>PINTEREST</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>E-MAIL</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WHATSAPP</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-weixin"></i>
+                        <span>WECHAT</span>
+                    </a>
+                </div>
+                
+                <div class="footer-divider"></div>
+                
+                <div class="footer-bottom">
+                    <p class="copyright">©2024 - Bản quyền thuộc về KiasuSpa | Thiết kế bởi AZMedia</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a class="fab-btn fab-call" href="tel:+84123456789" aria-label="Gọi nhanh"><i class="fas fa-phone"></i></a>
+        <a class="fab-btn fab-zalo" href="#contact" aria-label="Nhắn Zalo"><i class="fab fa-facebook-messenger"></i></a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
